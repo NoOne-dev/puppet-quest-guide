@@ -463,7 +463,7 @@ key via Gitea's API.
 
 		curl -i \
 		-H "Content-Type: application/json" \
-		-X POST -d "{\"Title\": \"Code Manager\",\"Key\": \"$(cut -d' ' -f 2 /etc/puppetlabs/puppetserver/ssh/id-control_repo.rsa.pub)\"}" \
+		-X POST -d "{\"Title\": \"Code Manager\",\"Key\": \"$(cut -d' ' -f 2 /etc/puppetlabs/puppetserver/ssh/id-control_repo.pub)\"}" \
 		http://learning:puppet@localhost:3000/api/v1/repos/learning/control-repo/keys
 
 Once you've run this command, refresh your browser window to confirm that the
